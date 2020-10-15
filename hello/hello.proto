@@ -1,0 +1,14 @@
+syntax="proto3";
+
+service Hello{
+    rpc SyaHello(Greet) returns (Greet);
+    rpc FuckYou(Greet) returns (Fuck);
+ }
+
+message Greet {
+  string name = 1;
+}
+
+message Fuck{
+    string curse=1;
+}
